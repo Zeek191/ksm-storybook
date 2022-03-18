@@ -1,0 +1,30 @@
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+
+    margin: 0 auto;
+    max-width: 1170px;
+    padding: 0 15px;
+
+    @media (--sm) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    @media (--md) {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.centerWrapper {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.colTitle {
+    text-transform: uppercase;
+}

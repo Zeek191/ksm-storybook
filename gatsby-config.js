@@ -1,8 +1,18 @@
-/** @type {import('gatsby').GatsbyConfig} */
+const path = require("path");
+
 module.exports = {
   siteMetadata: {
     title: ``,
-    siteUrl: `https://www.yourdomain.tld`
+    siteUrl: `https://www.yourdomain.tld`,
   },
-  plugins: ["gatsby-plugin-postcss"]
+  plugins: [
+    {
+      resolve: "gatsby-plugin-root-import",
+      options: {
+        config: path.join(__dirname, "config"),
+        "@": path.join(__dirname, "src"),
+      },
+    },
+    "gatsby-plugin-postcss",
+  ],
 };

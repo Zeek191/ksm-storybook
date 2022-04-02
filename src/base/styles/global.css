@@ -1,13 +1,19 @@
 :root {
   --color--primary-1: rgb(255,123, 0);
   --color--primary-1-5: rgba(255, 123, 0, 0.5);
+  --color--primary-2: rgb(173, 64, 0);
 
   --color--red-1: rgb(255, 0, 0);
   --color--red-1-5: rgba(255, 0, 0, 0.5);
+  --color--red-2: rgb(124, 6, 6);
+
   --color--green-1: rgb(0, 255, 0);
   --color--green-1-5: rgba(0, 255, 0, 0.5);
+  --color--green-2: rgb(0, 134, 0);
+ 
   --color--blue-1: rgb(0,0,255);
   --color--blue-1-5: rgba(0,0,255, 0.5);
+  --color--blue-2: rgb(0, 0, 119);
 
   --color--white-1: rgb(255,255,255);
   --color--black-1: rgb(0,0,0);

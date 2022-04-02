@@ -8,9 +8,6 @@ const IndexPage = () => {
       <Button styleType="success" styleSize="medium" disabled>
         test
       </Button>
-      <Button styleType="error" styleSize="medium" disabled>
-        test
-      </Button>
     </main>
   )
 }

@@ -1,6 +1,8 @@
 import React, { PropsWithChildren } from 'react'
-import { Story, Meta } from '@storybook/react'
+import { Story, ComponentMeta } from '@storybook/react'
 import Button, { ButtonTypes } from '../Button'
+
+import { Title, ArgsTable, Stories, PRIMARY_STORY } from '@storybook/addon-docs'
 
 export default {
   title: 'Elements/Button',
@@ -11,9 +13,26 @@ export default {
     disabled: { control: 'boolean', defaultValue: true },
     onClick: { action: 'clicked', table: { disable: true } },
   },
-} as Meta
+  parameters: {
+    docs: {
+      theme: 'dark',
+      page: () => (
+        <>
+          <Title />
+          <p>DOCS</p>
+          <ArgsTable story={PRIMARY_STORY} />
+          <Stories includePrimary title={'asdasd as da'} />
+        </>
+      ),
+    },
+  },
+} as ComponentMeta<typeof Button>
 
-const Template: Story<PropsWithChildren<ButtonTypes>> = (args) => <Button {...args} />
+const Template: Story<PropsWithChildren<ButtonTypes>> = (args) => (
+  <>
+    <Button {...args} />
+  </>
+)
 
 export const Primary = Template.bind({})
 Primary.args = {

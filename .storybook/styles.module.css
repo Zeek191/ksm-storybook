@@ -1,0 +1,4 @@
+.inverted[data-inverted="true"] > * {
+    filter: invert(100%) !important;
+}
+

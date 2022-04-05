@@ -1,0 +1,17 @@
+.label {
+    display: grid;
+    max-width: 200px;
+}
+
+.input {
+    padding: 10px 30px;
+    border-radius: 20px;
+    transition: 0.2s ease-in-out;
+}
+
+.input:focus {
+    border: 2px solid red;
+    box-shadow: 0px 20px 24px 0px red;
+    outline: none;
+    transition: 0.2s ease-in-out;
+} 

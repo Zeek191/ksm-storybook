@@ -27,7 +27,7 @@
   background-color: var(--color--blue-1);
 
   &:focus {
-    background-color: var(--color--secondary-2);
+    background-color: var(--color--blue-2);
   }
 
   &:disabled {

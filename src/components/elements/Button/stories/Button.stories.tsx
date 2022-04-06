@@ -15,7 +15,6 @@ export default {
   },
   parameters: {
     docs: {
-      theme: 'dark',
       page: () => (
         <>
           <Title />
@@ -28,11 +27,7 @@ export default {
   },
 } as ComponentMeta<typeof Button>
 
-const Template: Story<PropsWithChildren<ButtonTypes>> = (args) => (
-  <>
-    <Button {...args} />
-  </>
-)
+const Template: Story<PropsWithChildren<ButtonTypes>> = (args) => <Button {...args} />
 
 export const Primary = Template.bind({})
 Primary.args = {
